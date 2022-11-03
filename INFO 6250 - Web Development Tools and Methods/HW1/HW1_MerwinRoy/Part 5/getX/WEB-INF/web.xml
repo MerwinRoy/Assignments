@@ -1,0 +1,11 @@
+<web-app>
+    <servlet>
+        <servlet-name>getXServlet</servlet-name>
+        <servlet-class>GetXServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>getXServlet</servlet-name>
+        <url-pattern>/test.html</url-pattern>
+    </servlet-mapping>
+</web-app>
