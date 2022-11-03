@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0accf02e.chunk.css",
+    "main.js": "/static/js/main.b4f34084.chunk.js",
+    "main.js.map": "/static/js/main.b4f34084.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6fafe0c6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6fafe0c6.js.map",
+    "static/js/2.5c659e5d.chunk.js": "/static/js/2.5c659e5d.chunk.js",
+    "static/js/2.5c659e5d.chunk.js.map": "/static/js/2.5c659e5d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.0accf02e.chunk.css.map": "/static/css/main.0accf02e.chunk.css.map",
+    "static/js/2.5c659e5d.chunk.js.LICENSE.txt": "/static/js/2.5c659e5d.chunk.js.LICENSE.txt",
+    "static/media/barista.d69aadd2.jpg": "/static/media/barista.d69aadd2.jpg",
+    "static/media/coffee_inn.af7def15.jpg": "/static/media/coffee_inn.af7def15.jpg",
+    "static/media/dunkin.8a00c2cd.jpg": "/static/media/dunkin.8a00c2cd.jpg",
+    "static/media/jane.a1d2f373.jpg": "/static/media/jane.a1d2f373.jpg",
+    "static/media/manager.f03bc5c3.jpg": "/static/media/manager.f03bc5c3.jpg",
+    "static/media/merwin.ea535218.JPG": "/static/media/merwin.ea535218.JPG",
+    "static/media/starbucks.055502bf.jpg": "/static/media/starbucks.055502bf.jpg",
+    "static/media/tatte.c6836547.jpg": "/static/media/tatte.c6836547.jpg",
+    "static/media/waiter.856c7213.jpg": "/static/media/waiter.856c7213.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6fafe0c6.js",
+    "static/js/2.5c659e5d.chunk.js",
+    "static/css/main.0accf02e.chunk.css",
+    "static/js/main.b4f34084.chunk.js"
+  ]
+}

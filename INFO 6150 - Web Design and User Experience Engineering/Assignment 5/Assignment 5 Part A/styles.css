@@ -1,0 +1,116 @@
+body,html {
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    background-color: #131417;
+    color:antiquewhite;
+}
+
+.title-color {
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(187, 36, 89);
+}
+
+nav li a:hover{
+    color:rgb(187, 36, 89);
+}
+
+
+
+.heading-content {
+    position:absolute;
+    top:40%;
+    width:100%;
+    max-width:100%;
+}
+.heading-content h1{
+    font-size:3em;
+    font-weight:300;
+    color: antiquewhite;
+    font-family:'Montserrat',sans-serif;
+}
+.heading-content h3{
+    font-size:4em;
+    font-weight:bolder;
+    color: antiquewhite;
+    font-family:'Montserrat',sans-serif;
+}
+
+#about .btn{
+    border:2px solid black;
+    width:40%;
+    padding:15px 22px;
+    background:rgb(187, 36, 89);
+    border-radius:5px;
+    margin-top:10px;
+}
+
+#about .btn a{
+     color:antiquewhite;
+     text-decoration:none;
+     font-size:1em;
+     font-weight: bold;
+     text-transform:uppercase;
+}
+
+#about .btn:hover{
+    background: rgb(123, 22, 58);
+}
+
+.carousel-item {
+    height:40rem;
+    background:#000;
+    color:antiquewhite;
+    background-image:center;
+    background-size: cover;
+  }
+  
+  .container-car {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding-bottom:50px;
+    font-size:30px;
+    text-align: center;
+  }
+  
+  .overlay-image{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+    background-image:center;
+    background-size: cover;
+    opacity:0.8;
+  }
+
+.progress .progress-bar{
+    width:0;
+    transition:all ease 0.5s;
+}
+
+.form-group {
+    margin-top:10px;
+}
+
+#btnSubmit{
+    margin-top:15px;
+}
+
+thead{
+    color:antiquewhite;
+    background-color: rgb(22, 20, 20);
+}
+
+.progress{
+    margin-top:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.field{
+    margin-top:5px;
+}

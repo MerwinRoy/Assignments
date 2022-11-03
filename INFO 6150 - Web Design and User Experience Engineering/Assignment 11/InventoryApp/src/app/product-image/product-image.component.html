@@ -1,0 +1,8 @@
+<div>
+    <button type="button" id="button" class="btn btn-default btn-block" style="margin: auto" (click)="openModal()"><img class="product-image" [src]="product.getImageUrl()">
+    </button>
+  </div>
+  
+  <modal #modal [modalConfig]="modalConfig">
+    <img [src]="product.getImageUrl()">
+  </modal>  

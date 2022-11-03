@@ -1,0 +1,86 @@
+body,html{
+    height: 100%;
+    background-size: 100% 100%;
+    color:burlywood;
+    font-family: 'Zen Loop', cursive;
+    margin-bottom:50px;
+}
+
+#home_body{
+    background-image: url('images/home.jpg');
+    height: 100%;
+    background-size: 100% 100%;
+    margin-bottom: 50px;
+}
+
+#about_body{
+    background-color: rgb(33, 104, 85);
+    height:100%;
+    background-size: 100% 100%;
+}
+
+.about_bg {
+    background-color: rgb(33, 104, 85);
+}
+
+.about_img{
+    background-image: url("images/about.jpg");
+    height:100%;
+    background-size:100% 100%;
+}
+.about_opening {
+    background-color: rgb(33, 104, 85);
+    font-size:25px;
+}
+
+.about_section {
+    font-size: 35px;
+}
+
+.home_audio {
+    text-align: center;
+    font-size: 35px;
+}
+
+header{
+    font-size: 40px;
+    text-align: center;
+}
+
+footer{
+    position:fixed;
+    background-color: #333333;
+    text-align: center;
+    font-size: 20px;
+    height:50px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    margin-bottom: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: burlywood;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-family: 'Zen Loop', cursive;
+    font-size: 30px;
+}
+
+li a:hover {
+    background-color: #111111;
+}

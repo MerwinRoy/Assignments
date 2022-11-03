@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title>
+    <!--External css file for home page-->
+    <link rel="stylesheet" href="home.css" />
+    <!--Zen Loop Font style - cursive from google font api's-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Link for favicon-->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body id="contact_body">
+    <!--navbar - styled in css-->
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <img id="contact_bg" src="images/contact.jpg" />
+
+    <div class="contact_theme">
+      <h1 class="contact_title">CONTACT US</h1>
+      <div class="contact_font">
+        <p><strong>Address - </strong>75 Parker Street, Roxbury Crossing</p>
+        <p><strong>Call us at - </strong>05152535-123456</p>
+        <br />
+        <p>
+          Mervs Restaurant provides quality delicious delicacies from around the
+          world, with customer satisfaction being our top-most priority
+        </p>
+
+        <p><strong>Book your reservation here!</strong></p>
+        <form action="\home.html" method="GET" target="_blank">
+          <p>
+            Name:
+            <input
+              type="text"
+              placeholder="Name to register on reservation list.."
+              required
+              name="reservationName"
+            />
+          </p>
+          <p>
+            Number of People:
+            <input
+              type="number"
+              placeholder="Number of people for reservation.."
+              required
+              name="numberOfPeople"
+            />
+          </p>
+          <p>
+            Date and Time of Reservation:
+            <input
+              type="datetime-local"
+              placeholder="Date and time"
+              required
+              name="date&time"
+            />
+          </p>
+          <p>
+            Message/Instruction:
+            <input
+              type="text"
+              placeholder="Message/Instruction"
+              required
+              name="message"
+            />
+          </p>
+
+          <p>
+            Submit message and redirect to home page<button
+              class="contact_button"
+              type="Submit"
+            >
+              Submit
+            </button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

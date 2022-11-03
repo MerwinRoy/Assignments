@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Feedback</title>
+    <style>
+      label {
+        float: left;
+        width: 150px;
+      }
+      #container {
+        width: 1200px;
+        align-content: center;
+        margin: auto;
+        background-color: beige;
+      }
+      main {
+        padding: 0px;
+      }
+    </style>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <main>
+        <h2>Feedback</h2>
+        <h3>Love something? Hate something? Let us know!</h3>
+        Note : Fields marked with an asterisk(*) are mandatory
+        <br /><br />
+        <form id="form" name="form" onsubmit="return false">
+          <label>Title*:</label>
+          <input
+            type="radio"
+            name="title"
+            id="miss"
+            value="Miss"
+            required="required"
+          />Miss
+          <input
+            type="radio"
+            name="title"
+            id="mr"
+            value="Mr."
+            required="required"
+          />Mr.
+          <input
+            type="radio"
+            name="title"
+            id="mrs"
+            value="Mrs."
+            required="required"
+          />Mrs. <br /><br />
+          <div id="errorMsgRadio" style="display: none; color: red">
+            Invalid input for the Radio field. This is a mandatory field, pick
+            an option.
+            <br /><br />
+          </div>
+          <label for="firstName">First Name*:</label>
+          <input
+            class="required"
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name"
+            onblur="validateInputs(this, 1, 'FName')"
+            required
+          />
+          <br /><br />
+
+          <div id="errorMsgFName" style="display: none; color: red">
+            Invalid input for the First Name field. Only text is allowed.
+            <br /><br />
+          </div>
+
+          <label for="lastName">Last Name*:</label>
+          <input
+            class="required"
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+            onblur="validateInputs(this, 2, 'LName')"
+            required
+          />
+          <br /><br />
+
+          <div id="errorMsgLName" style="display: none; color: red">
+            Invalid input for the Last Name field. Only text is allowed.
+            <br /><br />
+          </div>
+
+          <label for="emailId">Email Id*:</label>
+          <input
+            class="required"
+            type="text"
+            name="emailId"
+            id="emailId"
+            placeholder="yourname@domain.com"
+            onblur="validateInputs(this, 3, 'EmailId')"
+            required
+          />
+          <br /><br />
+
+          <div id="errorMsgEmailId" style="display: none; color: red">
+            Invalid input for the Email ID field. Please enter valid email id
+            with @northeastern.edu domain.
+            <br /><br />
+          </div>
+
+          <label for="phoneNumber">Phone Number*:</label>
+          <input
+            class="required"
+            type="text"
+            name="phoneNumber"
+            id="phoneNumber"
+            placeholder="xxx-xxx-xxxx"
+            onblur="validateInputs(this, 4, 'Phone')"
+            required
+          />
+          <br /><br />
+
+          <div id="errorMsgPhone" style="display: none; color: red">
+            Invalid input for the Phone field. Please enter valid phone number
+            of format xxx-xxx-xxxx
+            <br /><br />
+          </div>
+
+          <label for="streetAddress1">Street Address 1*:</label>
+          <input
+            class="required"
+            type="text"
+            name="streetAddress1"
+            id="streetAddress1"
+            placeholder="address"
+            onblur="validateInputs(this, 5, 'Address')"
+            required
+          />
+          <br /><br />
+
+          <div id="errorMsgAddress" style="display: none; color: red">
+            Invalid input for the Address field. Please enter valid street
+            address
+            <br /><br />
+          </div>
+
+          <label for="streetAddress2">Street Address 2:</label>
+          <input
+            type="text"
+            name="streetAddress2"
+            id="streetAddress2"
+            placeholder="address"
+          />
+          <br /><br />
+
+          <label for="city">City*:</label>
+          <input
+            class="required"
+            type="text"
+            name="city"
+            id="city"
+            placeholder="city"
+            onblur="validateInputs(this, 6, 'City')"
+            required
+          />
+          <br /><br />
+          <div id="errorMsgCity" style="display: none; color: red">
+            Invalid input for the City field. Please enter valid city name
+            (text)
+            <br /><br />
+          </div>
+
+          <label for="state">State*:</label>
+          <input
+            class="required"
+            type="text"
+            name="state"
+            id="state"
+            placeholder="state"
+            onblur="validateInputs(this, 7, 'State')"
+            onkeyup="toggleSubmit()"
+            required
+          />
+          <br /><br />
+
+          <div id="errorMsgState" style="display: none; color: red">
+            Invalid input for the State field. Please enter valid State name
+            (text)
+            <br /><br />
+          </div>
+
+          <label for="zipcode">ZipCode*:</label>
+          <input
+            class="required"
+            type="text"
+            name="zipcode"
+            id="zipcode"
+            placeholder="xxxxxx"
+            onblur="validateInputs(this, 8, 'Zip')"
+            required
+          />
+          <br /><br />
+
+          <div id="errorMsgZip" style="display: none; color: red">
+            Invalid input for the Zip code field. Please enter valid Zip code
+            (6-digit)
+            <br /><br />
+          </div>
+
+          <label for="reference">How did you hear*:</label>
+          <input
+            name="reference"
+            type="checkbox"
+            id="facebook"
+            name="source"
+            value="facebook"
+            onclick="onlyOne()"
+            required
+          />
+          Facebook
+          <input
+            name="reference"
+            type="checkbox"
+            id="google"
+            name="source"
+            value="google"
+            onclick="onlyOne()"
+            required
+          />
+          Google
+          <input
+            name="reference"
+            type="checkbox"
+            id="yelp"
+            name="source"
+            value="yelp"
+            onclick="onlyOne()"
+            required
+          />
+          Yelp <br /><br />
+
+          <div id="errorMsgReference" style="display: none; color: red">
+            Invalid input for the reference field. Please select atleast one
+            checkbox
+            <br /><br />
+          </div>
+
+          <label for="country">Country*:</label>
+          <select id="country" onChange="showCheckbox()">
+            <option value="UK">UK</option>
+            <option value="India">India</option>
+            <option value="Russia">Russia</option>
+            <option value="France">France</option>
+            <option value="Spain">Spain</option>
+          </select>
+
+          <br /><br />
+
+          <div id="langDiv"></div>
+
+          <br /><br />
+          <div id="errorMsglangSay" style="display: none; color: red">
+            Invalid input for the language field. Please type something.
+            <br /><br />
+          </div>
+
+          <label for="comments">Comments*:</label>
+          <textarea
+            class="required"
+            name="text"
+            id="Comments"
+            placeholder="Your comments"
+            rows="5"
+            cols="25"
+            onblur="validateInputs(this, 9, 'Comments')"
+            required
+          ></textarea>
+          <br /><br />
+          <div id="errorMsgComments" style="display: none; color: red">
+            Invalid input for the Comments field. Please fill in the comment
+            box.
+            <br /><br />
+          </div>
+          <input
+            type="Submit"
+            onclick="hearCheckboxValidation();radioValidation();onSubmit()"
+          />
+          <input type="Reset" />
+          <br /><br />
+        </form>
+        <table id="resultTable" style="display: none; border: 1px solid black">
+          <tr>
+            <th>Title</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email ID</th>
+            <th>Phone No.</th>
+            <th>Street Address 1</th>
+            <th>Street Address 2</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip Code</th>
+            <th>Reference</th>
+            <th>Country</th>
+            <th>Language</th>
+            <th>Message</th>
+            <th>Comment</th>
+          </tr>
+        </table>
+      </main>
+    </div>
+  </body>
+</html>

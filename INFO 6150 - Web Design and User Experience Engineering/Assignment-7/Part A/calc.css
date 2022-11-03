@@ -1,0 +1,123 @@
+:root {
+    --primary: crimson;
+    --dark: #1F2937;
+    --darker:#111827;
+    --light:#F3F4F6;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    font-family:'Fira-sans',sans-serif;
+}
+
+body{
+    background-color: var(--dark);
+    color:var(--light);
+}
+
+fieldset{
+    color:rgb(24, 140, 102)
+}
+
+#header{
+    text-align: center;
+    color:rgb(90, 130, 130);
+}
+
+/*Form and Calculator container alignment*/
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:rgb(46, 121, 121);
+
+}
+
+
+.controls{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/*Buttons*/
+#login_btn button,.controls input {
+    appearance: none;
+    background:none;
+    border:none;
+    outline:none;
+    user-select:none;
+    cursor:pointer;
+
+    color:var(--light);
+    font-size: 1.125rem;
+    background-color:var(--primary);
+    margin:0 0.5rem;
+    padding:0.5rem 1rem;
+    border-radius:0.5rem;
+    
+    transition:0.4s; 
+}
+
+#login_btn button:hover,.controls input:hover{
+    opacity:0.7;
+}
+
+#login_btn button:active,.controls input:active{
+    background-color:var(--dark);
+}
+
+/*Input field*/
+
+input {
+    border-radius: 30px;
+    font-weight:inherit;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    border:none;
+    color: rgb(153, 226, 209);
+    background-color: rgb(46, 46, 47);
+    padding:0.8rem;
+    resize:none;
+    margin:0.5rem;
+}
+
+/*Input Page*/
+#login label{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+}
+#login_btn{
+	padding-left: 100px;
+}
+#login div{
+	margin-top: 1em;
+}
+
+.error{
+	display: none;
+	margin-left: 10px;
+}
+
+.error_show{
+	color: red;
+	margin-left: 10px;
+}
+
+.error_Pass{
+    display: none;
+	margin-left: 10px; 
+}
+
+.error_Pass_show{
+    color: red;
+	margin-left: 10px; 
+}
+
+.error_P{
+    display: none;
+	margin-left: 10px; 
+}

@@ -1,0 +1,43 @@
+/* Mixins and Functions */
+
+//set space for margin and padding classes
+@function set-space($space){
+    @if($space == 1){
+        @return #{$space};
+    } @else if(($space) >1 && ($space)<=2){
+        @return #{($space)-0.5};
+    }
+    @else{
+        @return #{($space)-1};
+    }
+}
+
+//Set the background and text color
+@mixin set-background($color) {
+    background-color:$color;
+    color:$text-white;
+}
+
+
+//Margin and Padding classes
+$spaceamounts:(1,2,3,4,5);
+
+@each $space in $spaceamounts {
+    .m-#{$space}{
+        margin:set-space($space)rem;
+    }
+
+    .my-#{$space}{
+        margin:set-space($space)rem 0;
+    }
+
+    .p-#{$space}{
+        padding:set-space($space)rem;
+    }
+
+    .py-#{$space}{
+        padding:set-space($space)rem 0;
+    }
+
+
+}

@@ -1,0 +1,25 @@
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    color: rgb(66, 109, 177);
+}
+
+.title-color {
+  font-family: 'Montserrat', sans-serif;
+  color:rgb(187, 36, 89);
+}
+
+Carousel {
+  background-color: #000;
+  opacity:0.4;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background: url('../images/eventbg.jpg');
+  background-size:cover;
+}
+
+
