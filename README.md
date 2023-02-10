@@ -10,3 +10,4 @@
  * INFO 6150 - Web Design and User Experience Engineering (Summer 2022)
  * INFO 7390 - Advances in Data Sciences and Architecture (Fall 2022)
  * CSYE 7280 - User Experience Design and Testing (Fall 2022)
+ * DAMG 7245 - Big Data Systems and Intelligent Analytics (2023)
